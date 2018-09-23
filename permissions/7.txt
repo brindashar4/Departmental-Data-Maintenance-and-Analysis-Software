@@ -1,0 +1,17 @@
+create table student (rollno integer, name varchar(30), primary key (rollno));
+or 
+create table student (rollno integer primary key, name varchar(30));
+
+select * from student;
+desc student;
+ALTER TABLE student MODIFY name varchar(30) NOT NULL;
+	insert into student values(1,'');
+insert into student values(1,'abc');
+
+ALTER TABLE student MODIFY name varchar(30) UNIQUE;
+insert into student values(2,'abc');
+insert into student values(2,'xyz');
+
+
+delete from student where rollno=1;
+ALTER TABLE idc add rollno integer;
